@@ -183,22 +183,22 @@ export const SideNav: FC<SideNavProps> = (props) => {
       >
         <Stack sx={{ height: '100%' }}>
           <Stack alignItems='center' direction='row' spacing={2} sx={{ p: 3 }}>
-            <Box
-              component={NextLink}
-              href={paths.index}
-              sx={{
-                borderColor: 'var(--nav-logo-border)',
-                borderRadius: 1,
-                borderStyle: 'solid',
-                borderWidth: 1,
-                display: 'flex',
-                height: 40,
-                p: '4px',
-                width: 40,
-              }}
-            >
-              <Logo />
-            </Box>
+            {/*<Box*/}
+            {/*  component={NextLink}*/}
+            {/*  href={paths.index}*/}
+            {/*  sx={{*/}
+            {/*    borderColor: 'var(--nav-logo-border)',*/}
+            {/*    borderRadius: 1,*/}
+            {/*    borderStyle: 'solid',*/}
+            {/*    borderWidth: 1,*/}
+            {/*    display: 'flex',*/}
+            {/*    height: 40,*/}
+            {/*    p: '4px',*/}
+            {/*    width: 40,*/}
+            {/*  }}*/}
+            {/*>*/}
+            {/*  <Logo />*/}
+            {/*</Box>*/}
             <TenantSwitch />
           </Stack>
           <Stack

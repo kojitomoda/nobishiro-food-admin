@@ -52,7 +52,7 @@ export const Layout: FC<LayoutProps> = (props) => {
       >
         <Box maxWidth='md'>
           <Typography sx={{ mb: 1 }} variant='h4'>
-            Welcome to シチゴウキッチン | 運営画面デモ
+            Welcome to のびしろFood | 運営画面デモ
           </Typography>
           <Typography color='text.secondary' sx={{ mb: 4 }}>
             A professional kit that comes with ready-to-use MUI components developed with one common
@@ -129,7 +129,7 @@ export const Layout: FC<LayoutProps> = (props) => {
                 sx={{
                   color: 'text.primary',
                   fontFamily: "'Plus Jakarta Sans', sans-serif",
-                  fontSize: 14,
+                  fontSize: 15,
                   fontWeight: 800,
                   letterSpacing: '0.3px',
                   lineHeight: 2.5,

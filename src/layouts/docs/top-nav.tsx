@@ -46,9 +46,7 @@ export const TopNav: FC<TopNavProps> = (props) => {
           px: 2,
         }}
       >
-        <Stack alignItems='center'
-direction='row'
-spacing={1}>
+        <Stack alignItems='center' direction='row' spacing={1}>
           <Stack
             alignItems='center'
             component={NextLink}
@@ -76,7 +74,7 @@ spacing={1}>
               sx={{
                 color: 'text.primary',
                 fontFamily: "'Plus Jakarta Sans', sans-serif",
-                fontSize: 14,
+                fontSize: 15,
                 fontWeight: 800,
                 letterSpacing: '0.3px',
                 lineHeight: 2.5,
@@ -88,15 +86,11 @@ spacing={1}>
               Devias Kit <span>PRO</span>
             </Box>
           </Stack>
-          <Chip label='v6.0.0'
-size='small' />
+          <Chip label='v6.0.0' size='small' />
         </Stack>
-        <Stack alignItems='center'
-direction='row'
-spacing={2}>
+        <Stack alignItems='center' direction='row' spacing={2}>
           {!lgUp && (
-            <IconButton color='inherit'
-onClick={onMobileNavOpen}>
+            <IconButton color='inherit' onClick={onMobileNavOpen}>
               <SvgIcon>
                 <Menu01Icon />
               </SvgIcon>

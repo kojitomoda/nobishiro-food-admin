@@ -71,7 +71,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: Logistics Fleet | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: Logistics Fleet | のびしろFood | 運営画面デモ</title>
       </Head>
       <Divider />
       <Box

@@ -228,7 +228,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: File Manager | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: File Manager | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

@@ -86,7 +86,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Confirm Register | シチゴウキッチン | 運営画面デモ</title>
+        <title>Confirm Register | のびしろFood | 運営画面デモ</title>
       </Head>
       <div>
         <Card elevation={16}>

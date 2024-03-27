@@ -190,7 +190,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: Order List | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: Order List | のびしろFood | 運営画面デモ</title>
       </Head>
       <Divider />
       <Box

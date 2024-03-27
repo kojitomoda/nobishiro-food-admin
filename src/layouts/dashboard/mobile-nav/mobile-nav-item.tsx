@@ -115,7 +115,7 @@ export const MobileNavItem: FC<MobileNavItemProps> = (props) => {
               color: 'var(--nav-item-color)',
               flexGrow: 1,
               fontFamily: (theme) => theme.typography.fontFamily,
-              fontSize: depth > 0 ? 13 : 14,
+              fontSize: depth > 0 ? 15 : 15,
               fontWeight: depth > 0 ? 500 : 600,
               lineHeight: '24px',
               whiteSpace: 'nowrap',
@@ -139,8 +139,7 @@ export const MobileNavItem: FC<MobileNavItemProps> = (props) => {
             {open ? <ChevronDownIcon /> : <ChevronRightIcon />}
           </SvgIcon>
         </ButtonBase>
-        <Collapse in={open}
-sx={{ mt: 0.5 }}>
+        <Collapse in={open} sx={{ mt: 0.5 }}>
           {children}
         </Collapse>
       </li>
@@ -214,7 +213,7 @@ sx={{ mt: 0.5 }}>
             color: 'var(--nav-item-color)',
             flexGrow: 1,
             fontFamily: (theme) => theme.typography.fontFamily,
-            fontSize: depth > 0 ? 13 : 14,
+            fontSize: depth > 0 ? 13 : 15,
             fontWeight: depth > 0 ? 500 : 600,
             lineHeight: '24px',
             whiteSpace: 'nowrap',
@@ -229,8 +228,7 @@ sx={{ mt: 0.5 }}>
           {title}
         </Box>
         {label && (
-          <Box component='span'
-sx={{ ml: 2 }}>
+          <Box component='span' sx={{ ml: 2 }}>
             {label}
           </Box>
         )}

@@ -57,7 +57,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: Academy Dashboard | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: Academy Dashboard | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box component='main' sx={{ flexGrow: 1 }}>
         <Box

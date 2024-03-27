@@ -69,7 +69,7 @@ export const SideNavItem: FC<SideNavItemProps> = (props) => {
               color: 'text.primary',
               flexGrow: 1,
               fontFamily: (theme) => theme.typography.fontFamily,
-              fontSize: depth > 0 ? 13 : 14,
+              fontSize: depth > 0 ? 15 : 15,
               fontWeight: 600,
               lineHeight: '24px',
               whiteSpace: 'nowrap',
@@ -81,13 +81,11 @@ export const SideNavItem: FC<SideNavItemProps> = (props) => {
           >
             {title}
           </Box>
-          <SvgIcon fontSize='small'
-sx={{ color: 'action.active' }}>
+          <SvgIcon fontSize='small' sx={{ color: 'action.active' }}>
             {open ? <ChevronDownIcon /> : <ChevronRightIcon />}
           </SvgIcon>
         </ButtonBase>
-        <Collapse in={open}
-sx={{ mt: 0.5 }}>
+        <Collapse in={open} sx={{ mt: 0.5 }}>
           {children}
         </Collapse>
       </li>
@@ -152,7 +150,7 @@ sx={{ mt: 0.5 }}>
             color: 'text.primary',
             flexGrow: 1,
             fontFamily: (theme) => theme.typography.fontFamily,
-            fontSize: depth > 0 ? 13 : 14,
+            fontSize: depth > 0 ? 13 : 15,
             fontWeight: 600,
             lineHeight: '24px',
             whiteSpace: 'nowrap',
@@ -165,8 +163,7 @@ sx={{ mt: 0.5 }}>
           {title}
         </Box>
         {label && (
-          <Box component='span'
-sx={{ ml: 2 }}>
+          <Box component='span' sx={{ ml: 2 }}>
             {label}
           </Box>
         )}

@@ -93,7 +93,7 @@ const ProductList: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: Product List | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: Product List | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

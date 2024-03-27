@@ -5,7 +5,10 @@ import ChevronDownIcon from '@untitled-ui/icons-react/build/esm/ChevronDown'
 import { Box, IconButton, Stack, SvgIcon, Typography } from '@mui/material'
 import { TenantPopover } from './tenant-popover'
 
-const tenants: string[] = ['シチゴウキッチン 仙台店', 'ジーバーFOOD  仙台本店']
+const tenants: string[] = [
+  '枚方本店_和カフェ・ごはん  ことの葉',
+  '（通常）淀屋橋北浜駅前店_和カフェ・ごはん  ことの葉',
+]
 
 export const TenantSwitch: FC = (props) => {
   const anchorRef = useRef<HTMLButtonElement | null>(null)
@@ -27,9 +30,8 @@ export const TenantSwitch: FC = (props) => {
     <>
       <Stack alignItems='center' direction='row' spacing={2} {...props}>
         <Box sx={{ flexGrow: 1 }}>
-          <Typography color='inherit'>シチゴウキッチン</Typography>
-          <Typography color='neutral.400' variant='body2'>
-            本店
+          <Typography color='inherit' style={{ fontSize: '12px', fontWeight: 'bold' }}>
+            （ビュッフェ）淀屋橋北浜駅前店_和カフェ・ごはん ことの葉
           </Typography>
         </Box>
         <IconButton onClick={handlePopoverOpen} ref={anchorRef}>

@@ -92,7 +92,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Login | シチゴウキッチン | 運営画面デモ</title>
+        <title>Login | のびしろFood | 運営画面デモ</title>
       </Head>
       <div>
         <Card elevation={16}>
@@ -153,7 +153,7 @@ const Page: NextPage = () => {
                 type='submit'
                 variant='contained'
               >
-                Log In
+                ログイン
               </Button>
               <Box
                 sx={{

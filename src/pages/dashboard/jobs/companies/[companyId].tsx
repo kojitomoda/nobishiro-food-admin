@@ -86,7 +86,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: Company Details | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: Company Details | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

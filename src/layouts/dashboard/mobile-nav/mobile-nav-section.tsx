@@ -120,7 +120,7 @@ export const MobileNavSection: FC<MobileNavSectionProps> = (props) => {
           component='li'
           sx={{
             color: 'var(--nav-section-title-color)',
-            fontSize: 14,
+            fontSize: 15,
             fontWeight: 700,
             lineHeight: 1.66,
             mb: 1,

@@ -27,7 +27,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: E-Commerce | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: E-Commerce | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

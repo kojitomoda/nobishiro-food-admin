@@ -66,7 +66,7 @@ const Page: NextPage = () => {
         await signIn(values.email, values.password)
 
         if (isMounted()) {
-          router.push('/products')
+          router.push('/log')
         }
       } catch (err) {
         console.error(err)
@@ -92,7 +92,7 @@ const Page: NextPage = () => {
           <CardHeader
             subheader={<Typography color='text.secondary' variant='body2' />}
             sx={{ pb: 0 }}
-            title='Log in'
+            title='ログイン'
           />
           <CardContent>
             <form noValidate onSubmit={formik.handleSubmit}>
@@ -102,7 +102,7 @@ const Page: NextPage = () => {
                   error={!!(formik.touched.email && formik.errors.email)}
                   fullWidth
                   helperText={formik.touched.email && formik.errors.email}
-                  label='Email Address'
+                  label='メールアドレス'
                   name='email'
                   onBlur={formik.handleBlur}
                   onChange={formik.handleChange}
@@ -113,7 +113,7 @@ const Page: NextPage = () => {
                   error={!!(formik.touched.password && formik.errors.password)}
                   fullWidth
                   helperText={formik.touched.password && formik.errors.password}
-                  label='Password'
+                  label='パスワード'
                   name='password'
                   onBlur={formik.handleBlur}
                   onChange={formik.handleChange}
@@ -133,8 +133,9 @@ const Page: NextPage = () => {
                 sx={{ mt: 2 }}
                 type='submit'
                 variant='contained'
+                color='warning'
               >
-                Log In
+                ログイン
               </Button>
             </form>
           </CardContent>

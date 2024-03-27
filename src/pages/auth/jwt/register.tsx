@@ -92,7 +92,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Register | シチゴウキッチン | 運営画面デモ</title>
+        <title>Register | のびしろFood | 運営画面デモ</title>
       </Head>
       <div>
         <Card elevation={16}>

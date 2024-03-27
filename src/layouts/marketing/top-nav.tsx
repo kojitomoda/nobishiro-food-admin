@@ -133,7 +133,7 @@ export const TopNav: FC<TopNavProps> = (props) => {
                     },
                   }}
                 >
-                  シチゴウキッチン<span></span>
+                  のびしろFood<span></span>
                 </Box>
               )}
             </Stack>

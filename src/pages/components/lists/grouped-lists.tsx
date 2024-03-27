@@ -70,7 +70,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Components: Grouped Lists | シチゴウキッチン | 運営画面デモ</title>
+        <title>Components: Grouped Lists | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

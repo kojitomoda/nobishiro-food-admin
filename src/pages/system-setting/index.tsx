@@ -5,7 +5,6 @@ import { Box, Breadcrumbs, Container, Link, Stack, Typography } from '@mui/mater
 import { BreadcrumbsSeparator } from '../../components/breadcrumbs-separator'
 import { usePageView } from '../../hooks/use-page-view'
 import { Layout as DashboardLayout } from '../../layouts/dashboard'
-import { ProductCreateForm } from '../../sections/dashboard/product/product-create-form'
 import { CreateForm } from '@/sections/dashboard/system-setting/create-form'
 
 const ProductCreate: NextPage = () => {
@@ -14,7 +13,7 @@ const ProductCreate: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: Product Create | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: Product Create | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

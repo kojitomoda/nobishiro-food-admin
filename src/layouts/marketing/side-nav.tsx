@@ -231,7 +231,7 @@ const reduceChildRoutes = ({
                         sx={{
                           flexGrow: 1,
                           fontFamily: (theme) => theme.typography.fontFamily,
-                          fontSize: 13,
+                          fontSize: 15,
                           fontWeight: 500,
                           lineHeight: '24px',
                           whiteSpace: 'nowrap',
@@ -327,8 +327,7 @@ export const SideNav: FC<SideNavProps> = (props) => {
           </Box>
         </Stack>
       </Box>
-      <Box component='nav'
-sx={{ p: 2 }}>
+      <Box component='nav' sx={{ p: 2 }}>
         <Stack
           component='ul'
           spacing={1}

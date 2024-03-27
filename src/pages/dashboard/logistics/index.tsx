@@ -29,7 +29,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: Logistics Dashboard | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: Logistics Dashboard | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

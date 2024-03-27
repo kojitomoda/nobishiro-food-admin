@@ -63,7 +63,7 @@ const Page: NextPage<PageProps> = (props) => {
   return (
     <>
       <Head>
-        <title>{`Docs: ${article.title} | シチゴウキッチン | 運営画面デモ`}</title>
+        <title>{`Docs: ${article.title} | のびしろFood | 運営画面デモ`}</title>
       </Head>
       <Container maxWidth='lg' sx={{ pb: '120px' }}>
         <ArticleContent content={article.content || ''} />

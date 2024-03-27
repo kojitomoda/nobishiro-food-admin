@@ -62,7 +62,7 @@ export const Layout: FC<LayoutProps> = (props) => {
                 sx={{
                   color: 'text.primary',
                   fontFamily: "'Plus Jakarta Sans', sans-serif",
-                  fontSize: 14,
+                  fontSize: 15,
                   fontWeight: 800,
                   letterSpacing: '0.3px',
                   lineHeight: 2.5,
@@ -71,7 +71,7 @@ export const Layout: FC<LayoutProps> = (props) => {
                   },
                 }}
               >
-                シチゴウキッチン<span>運営管理画面</span>
+                のびしろFood<span>運営管理画面</span>
               </Box>
             </Stack>
           </Stack>

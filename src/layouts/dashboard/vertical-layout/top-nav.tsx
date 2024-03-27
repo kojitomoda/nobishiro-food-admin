@@ -5,10 +5,13 @@ import type { Theme } from '@mui/material'
 import { Box, IconButton, Stack, SvgIcon, useMediaQuery } from '@mui/material'
 import { alpha } from '@mui/material/styles'
 import { AccountButton } from '../account-button'
+import { ContactsButton } from '../contacts-button'
+import { LanguageSwitch } from '../language-switch'
 import { NotificationsButton } from '../notifications-button'
 import { SearchButton } from '../search-button'
+import { bold } from 'kleur/colors'
 
-const TOP_NAV_HEIGHT: number = 40
+const TOP_NAV_HEIGHT: number = 64
 const SIDE_NAV_WIDTH: number = 280
 
 interface TopNavProps {
@@ -41,24 +44,24 @@ export const TopNav: FC<TopNavProps> = (props) => {
         alignItems='center'
         direction='row'
         justifyContent='space-between'
-        spacing={0}
+        spacing={2}
         sx={{
           minHeight: TOP_NAV_HEIGHT,
           px: 2,
-          pt: 2,
         }}
+        style={{ backgroundColor: '#4580e60a' }}
       >
         <Stack alignItems='center' direction='row' spacing={2}>
-          {!lgUp && (
-            <IconButton onClick={onMobileNavOpen}>
-              <SvgIcon>
-                <Menu01Icon />
-              </SvgIcon>
-            </IconButton>
-          )}
+          <div style={{ fontSize: '20px', fontWeight: 'bold' }}>合同会社COREHITS</div>
         </Stack>
         <Stack alignItems='center' direction='row' spacing={2}>
-          {/*<AccountButton />*/}
+          <Box
+            alt='Google'
+            component='img'
+            src='../../../assets/logos/nobishiro_logo.svg'
+            sx={{ mr: 1 }}
+            style={{ width: '200px' }}
+          />
         </Stack>
       </Stack>
     </Box>

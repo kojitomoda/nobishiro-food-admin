@@ -95,7 +95,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Reset Password | シチゴウキッチン | 運営画面デモ</title>
+        <title>Reset Password | のびしろFood | 運営画面デモ</title>
       </Head>
       <div>
         <Card elevation={16}>

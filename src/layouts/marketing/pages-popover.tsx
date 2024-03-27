@@ -182,14 +182,13 @@ export const PagesPopover: FC = () => (
                   >
                     {item.icon}
                   </Box>
-                  <Box component='span'
-sx={{ flexGrow: 1 }}>
+                  <Box component='span' sx={{ flexGrow: 1 }}>
                     <Box
                       component='span'
                       sx={{
                         display: 'block',
                         fontFamily: (theme) => theme.typography.fontFamily,
-                        fontSize: 14,
+                        fontSize: 15,
                         fontWeight: 500,
                         lineHeight: '24px',
                         whiteSpace: 'nowrap',
@@ -268,7 +267,7 @@ sx={{ flexGrow: 1 }}>
                                 color: 'text.secondary',
                                 display: 'block',
                                 fontFamily: (theme) => theme.typography.fontFamily,
-                                fontSize: 14,
+                                fontSize: 15,
                                 fontWeight: 500,
                                 lineHeight: '24px',
                                 whiteSpace: 'nowrap',

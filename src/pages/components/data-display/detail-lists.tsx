@@ -55,7 +55,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Components: Detail Lists | シチゴウキッチン | 運営画面デモ</title>
+        <title>Components: Detail Lists | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

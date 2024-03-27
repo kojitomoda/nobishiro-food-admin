@@ -175,7 +175,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: Mail | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: Mail | のびしろFood | 運営画面デモ</title>
       </Head>
       <Divider />
       <Box

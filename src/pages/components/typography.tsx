@@ -13,7 +13,7 @@ export const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Components: Typography | シチゴウキッチン | 運営画面デモ</title>
+        <title>Components: Typography | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

@@ -180,7 +180,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: Calendar | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: Calendar | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

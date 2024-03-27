@@ -54,7 +54,7 @@ export const SideNavItem: FC<SideNavItemProps> = (props) => {
             sx={{
               flexGrow: 1,
               fontFamily: (theme) => theme.typography.fontFamily,
-              fontSize: 14,
+              fontSize: 15,
               fontWeight: 500,
               lineHeight: '24px',
               whiteSpace: 'nowrap',
@@ -75,8 +75,7 @@ export const SideNavItem: FC<SideNavItemProps> = (props) => {
             {open ? <ChevronDownIcon /> : <ChevronRightIcon />}
           </SvgIcon>
         </ButtonBase>
-        <Collapse in={open}
-sx={{ mt: 0.5 }}>
+        <Collapse in={open} sx={{ mt: 0.5 }}>
           {children}
         </Collapse>
       </li>

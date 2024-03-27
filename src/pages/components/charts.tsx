@@ -80,7 +80,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Components: Charts | シチゴウキッチン | 運営画面デモ</title>
+        <title>Components: Charts | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

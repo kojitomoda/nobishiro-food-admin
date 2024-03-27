@@ -65,7 +65,7 @@ export const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Components: Modals | シチゴウキッチン | 運営画面デモ</title>
+        <title>Components: Modals | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

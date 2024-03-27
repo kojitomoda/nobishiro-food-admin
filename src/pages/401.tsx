@@ -15,7 +15,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Error: Authorization Required | シチゴウキッチン | 運営画面デモ</title>
+        <title>Error: Authorization Required | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

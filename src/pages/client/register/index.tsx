@@ -57,7 +57,7 @@ const ClientRegister: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dashboard: Product Create | シチゴウキッチン | 運営画面デモ</title>
+        <title>Dashboard: Product Create | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

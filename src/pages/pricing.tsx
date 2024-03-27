@@ -22,7 +22,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Pricing | シチゴウキッチン | 運営画面デモ</title>
+        <title>Pricing | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box component='main' sx={{ flexGrow: 1 }}>
         <Box

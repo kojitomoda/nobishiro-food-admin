@@ -47,13 +47,12 @@ const renderChildItems = ({ items, depth = 0 }: { items: Item[]; depth?: number 
                 primaryTypographyProps={{
                   sx: {
                     color: 'text.secondary',
-                    fontSize: 14,
+                    fontSize: 15,
                     fontWeight: 500,
                   },
                 }}
               />
-              <SvgIcon fontSize='small'
-sx={{ color: 'neutral.400' }}>
+              <SvgIcon fontSize='small' sx={{ color: 'neutral.400' }}>
                 <ChevronRightIcon />
               </SvgIcon>
             </ListItemButton>
@@ -118,7 +117,7 @@ sx={{ color: 'neutral.400' }}>
           primaryTypographyProps={{
             sx: {
               color: 'text.secondary',
-              fontSize: 14,
+              fontSize: 15,
               fontWeight: 500,
             },
           }}
@@ -178,7 +177,7 @@ export const TopNavItem: FC<TopNavItemProps> = (props) => {
                   color: 'var(--nav-item-color)',
                   flexGrow: 1,
                   fontFamily: (theme) => theme.typography.fontFamily,
-                  fontSize: 14,
+                  fontSize: 15,
                   fontWeight: 600,
                   lineHeight: '24px',
                   whiteSpace: 'nowrap',
@@ -285,7 +284,7 @@ export const TopNavItem: FC<TopNavItemProps> = (props) => {
             color: 'var(--nav-item-color)',
             flexGrow: 1,
             fontFamily: (theme) => theme.typography.fontFamily,
-            fontSize: 14,
+            fontSize: 15,
             fontWeight: 600,
             lineHeight: '24px',
             whiteSpace: 'nowrap',
@@ -300,8 +299,7 @@ export const TopNavItem: FC<TopNavItemProps> = (props) => {
           {title}
         </Box>
         {label && (
-          <Box component='span'
-sx={{ ml: 1 }}>
+          <Box component='span' sx={{ ml: 1 }}>
             {label}
           </Box>
         )}

@@ -15,7 +15,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Error: Not Found | シチゴウキッチン | 運営画面デモ</title>
+        <title>Error: Not Found | のびしろFood | 運営画面デモ</title>
       </Head>
       <Box
         component='main'

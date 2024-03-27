@@ -6,6 +6,7 @@ import * as Yup from 'yup'
 import { useFormik } from 'formik'
 import {
   Alert,
+  Box,
   Button,
   Card,
   CardContent,
@@ -102,8 +103,17 @@ const Page: NextPage = () => {
             //   </Typography>
             // }
             sx={{ pb: 0 }}
-            title='Log in'
           />
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <Box
+              alt='Google'
+              component='img'
+              src='../../../assets/logos/nobishiro_logo.svg'
+              sx={{ mr: 1 }}
+              style={{ width: '200px' }}
+            />
+          </div>
+
           <CardContent>
             <form noValidate onSubmit={formik.handleSubmit}>
               <Stack spacing={3}>
@@ -112,7 +122,7 @@ const Page: NextPage = () => {
                   error={!!(formik.touched.email && formik.errors.email)}
                   fullWidth
                   helperText={formik.touched.email && formik.errors.email}
-                  label='Email Address'
+                  label='メールアドレス'
                   name='email'
                   onBlur={formik.handleBlur}
                   onChange={formik.handleChange}
@@ -123,7 +133,7 @@ const Page: NextPage = () => {
                   error={!!(formik.touched.password && formik.errors.password)}
                   fullWidth
                   helperText={formik.touched.password && formik.errors.password}
-                  label='Password'
+                  label='パスワード'
                   name='password'
                   onBlur={formik.handleBlur}
                   onChange={formik.handleChange}
@@ -143,8 +153,9 @@ const Page: NextPage = () => {
                 sx={{ mt: 2 }}
                 type='submit'
                 variant='contained'
+                color='warning'
               >
-                Log In
+                ログイン
               </Button>
             </form>
           </CardContent>
