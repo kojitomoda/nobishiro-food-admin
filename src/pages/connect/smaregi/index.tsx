@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Box, Divider, Link, Stack, Typography } from '@mui/material'
 import { Layout as DashboardLayout } from '../../../layouts/dashboard'
-import { ConnectContent } from '@/pages/connect/smaregi/content'
+import { ConnectContent } from '@/components/demo3/content'
 
 const Page: NextPage = () => {
   const [drawer, setDrawer] = useState<{

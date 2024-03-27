@@ -180,7 +180,7 @@ export const ConnectContent: FC = (props) => {
                     variant='contained'
                     style={{ width: '200px', fontSize: '18px' }}
                     component={NextLink}
-                    href={`/store/register`}
+                    href={``}
                   >
                     設定する
                   </Button>
