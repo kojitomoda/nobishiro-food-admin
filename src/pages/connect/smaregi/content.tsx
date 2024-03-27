@@ -135,14 +135,17 @@ export const ConnectContent: FC = (props) => {
               <CardContent>
                 <Stack spacing={5}>
                   <Grid>
-                    <Typography variant='h5' sx={{ pb: 2 }}>
+                    <Typography variant='h5' sx={{ pb: 4 }}>
+                      スマレジとの連携方法
+                    </Typography>
+                    <Typography variant='h6' sx={{ pb: 1 }}>
                       ステップ１
                     </Typography>
                     <div>スマレジログイン画面でログイン。</div>
                     <img src='../../assets/smeregi_step1.png' width={600} />
                   </Grid>
                   <Grid>
-                    <Typography variant='h5' sx={{ pb: 2 }}>
+                    <Typography variant='h6' sx={{ pb: 1 }}>
                       ステップ2
                     </Typography>
                     <div>のびしろFoodにアクセス件を付与することを許可する。</div>
