@@ -25,7 +25,14 @@ import {
 } from '@mui/material'
 import { SeverityPill } from '@/components/severity-pill'
 
-type TabValue = 'all' | 'canceled' | 'complete' | 'pending' | 'payment' | 'contact'
+type TabValue =
+  | 'all'
+  | 'canceled'
+  | 'complete'
+  | 'pending'
+  | 'payment'
+  | 'contact'
+  | 'contract-update'
 interface TabOption {
   label: string
   value: TabValue
@@ -36,10 +43,10 @@ const tabOptions: TabOption[] = [
     label: '概要',
     value: 'all',
   },
-  {
-    label: '請求履歴',
-    value: 'pending',
-  },
+  // {
+  //   label: '請求履歴',
+  //   value: 'pending',
+  // },
   {
     label: '設定',
     value: 'complete',
@@ -49,9 +56,13 @@ const tabOptions: TabOption[] = [
     value: 'contact',
   },
   {
-    label: 'お支払い方法',
-    value: 'payment',
+    label: '契約内容変更画面',
+    value: 'contract-update',
   },
+  // {
+  //   label: 'お支払い方法',
+  //   value: 'payment',
+  // },
 ]
 
 export const OrderListSearch: FC = (props) => {
@@ -89,23 +100,42 @@ export const OrderListSearch: FC = (props) => {
                 <Stack spacing={3}>
                   <Grid>
                     <Typography variant='h5' sx={{ pb: 3 }}>
-                      ご契約プラン
+                      ご契約内容
                     </Typography>
-                    <div>
-                      このアカウントでは、スタンダードプランを月払いで利用しています。<br></br>
-                      ご契約のプランは、2024年4月1日に <strong>￥28,050</strong>（税込み)
-                      で更新されます。<br></br>
+                    <Table>
+                      <TableHead>
+                        <TableRow>
+                          <TableCell>内容</TableCell>
+                          <TableCell>数量</TableCell>
+                          <TableCell>備考</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        <TableRow hover sx={{ cursor: 'pointer' }}>
+                          <TableCell>店舗数</TableCell>
+                          <TableCell>２店舗</TableCell>
+                        </TableRow>
+                        <TableRow hover sx={{ cursor: 'pointer' }}>
+                          <TableCell>スタッフ追加</TableCell>
+                          <TableCell>2</TableCell>
+                          <TableCell>１つ追加あたり10アカウント追加できます。</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                    <div style={{ marginTop: '20px' }}>
+                      この契約では、<strong>38</strong>アカウントを追加できます。<br></br>
+                      2024年4月1日に <strong>￥22,00</strong>（税込み) で更新されます。<br></br>
                       <strong>2024年4月1日 ~ 2024年4月30日</strong>までの利用料金です。
                     </div>
                   </Grid>
                   <Grid>
-                    <Typography variant='h6' sx={{ pb: 1 }}>
-                      アカウントのステータス
-                    </Typography>
-                    <div>
-                      今回のお支払いは、 <strong>３</strong>店舗分の利用料金となります。
-                    </div>
-                    <a href=''>店舗を確認する</a>
+                    {/*<Typography variant='h6' sx={{ pb: 1 }}>*/}
+                    {/*  アカウントのステータス*/}
+                    {/*</Typography>*/}
+                    {/*<div>*/}
+                    {/*  今回のお支払いは、 <strong>３</strong>店舗分の利用料金となります。*/}
+                    {/*</div>*/}
+                    <a href=''>契約内容変更はこちら</a>
                   </Grid>
                   <Stack>
                     <Grid>
@@ -256,6 +286,34 @@ export const OrderListSearch: FC = (props) => {
                   >
                     クレジットカードを変更する
                   </Button>
+                </Stack>
+              </CardContent>
+            </Card>
+          </Stack>
+        </Container>
+      ) : currentTab === 'contract-update' ? (
+        <Container maxWidth='md'>
+          <Stack spacing={5} pt={5}>
+            <Card>
+              <CardContent>
+                <Stack spacing={5}>
+                  <Grid>
+                    <Typography variant='h5' sx={{ pb: 3 }}>
+                      契約内容変更画面イメージ
+                    </Typography>
+                    <img src='../../assets/contract-update-demo.png' width={800} />
+                    {/*<div>*/}
+                    {/*  <div style={{ fontWeight: 'bold' }}>カード番号末尾 4 桁 : 1027</div>*/}
+                    {/*  <div style={{ fontSize: '14px' }}>Amex 07/2024</div>*/}
+                    {/*</div>*/}
+                  </Grid>
+                  {/*<Button*/}
+                  {/*  color='warning'*/}
+                  {/*  variant='contained'*/}
+                  {/*  style={{ width: '400px', fontSize: '18px' }}*/}
+                  {/*>*/}
+                  {/*  クレジットカードを変更する*/}
+                  {/*</Button>*/}
                 </Stack>
               </CardContent>
             </Card>

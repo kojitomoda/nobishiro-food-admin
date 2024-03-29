@@ -66,7 +66,7 @@ const Page: NextPage = () => {
         await signIn(values.email, values.password)
 
         if (isMounted()) {
-          router.push('/log')
+          router.push('/payment')
         }
       } catch (err) {
         console.error(err)

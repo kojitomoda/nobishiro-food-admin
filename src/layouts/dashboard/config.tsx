@@ -28,64 +28,6 @@ export const getSections = (t: TFunction): Section[] => [
   {
     items: [
       {
-        title: 'ホームに戻る',
-        icon: (
-          <SvgIcon fontSize='small'>
-            <AlignLeft02 />
-          </SvgIcon>
-        ),
-      },
-      {
-        title: 'スタッフを管理する',
-        icon: (
-          <SvgIcon fontSize='small'>
-            <Users03Icon />
-          </SvgIcon>
-        ),
-        path: '/staff',
-      },
-      {
-        title: 'Appを設定する',
-        icon: (
-          <SvgIcon fontSize='small'>
-            <Share07 />
-          </SvgIcon>
-        ),
-        path: '/app-setting',
-      },
-      {
-        title: '履歴を確認する',
-        icon: (
-          <SvgIcon fontSize='small'>
-            <BarChartSquare02Icon />
-          </SvgIcon>
-        ),
-        path: '/log',
-      },
-    ],
-  },
-  {
-    subheader: '管理者機能',
-    items: [
-      {
-        title: '店舗を管理する',
-        icon: (
-          <SvgIcon fontSize='small'>
-            <ShoppingBag03Icon />
-          </SvgIcon>
-        ),
-        path: '/store',
-      },
-      {
-        title: 'アカウントを管理する',
-        icon: (
-          <SvgIcon fontSize='small'>
-            <Users03Icon />
-          </SvgIcon>
-        ),
-        path: '/member',
-      },
-      {
         title: '料金・お支払い',
         icon: (
           <SvgIcon fontSize='small'>
@@ -103,6 +45,91 @@ export const getSections = (t: TFunction): Section[] => [
         ),
         path: '/connect',
       },
+      {
+        title: '店舗を管理する',
+        icon: (
+          <SvgIcon fontSize='small'>
+            <ShoppingBag03Icon />
+          </SvgIcon>
+        ),
+        path: '/store',
+      },
+      // {
+      //   title: 'ホームに戻る',
+      //   icon: (
+      //     <SvgIcon fontSize='small'>
+      //       <AlignLeft02 />
+      //     </SvgIcon>
+      //   ),
+      // },
+      // {
+      //   title: 'スタッフを管理する',
+      //   icon: (
+      //     <SvgIcon fontSize='small'>
+      //       <Users03Icon />
+      //     </SvgIcon>
+      //   ),
+      //   path: '/staff',
+      // },
+      // {
+      //   title: 'Appを設定する',
+      //   icon: (
+      //     <SvgIcon fontSize='small'>
+      //       <Share07 />
+      //     </SvgIcon>
+      //   ),
+      //   path: '/app-setting',
+      // },
+      // {
+      //   title: '履歴を確認する',
+      //   icon: (
+      //     <SvgIcon fontSize='small'>
+      //       <BarChartSquare02Icon />
+      //     </SvgIcon>
+      //   ),
+      //   path: '/log',
+      // },
     ],
   },
+  // {
+  //   subheader: '管理者機能',
+  //   items: [
+  //     {
+  //       title: '店舗を管理する',
+  //       icon: (
+  //         <SvgIcon fontSize='small'>
+  //           <ShoppingBag03Icon />
+  //         </SvgIcon>
+  //       ),
+  //       path: '/store',
+  //     },
+  //     {
+  //       title: 'アカウントを管理する',
+  //       icon: (
+  //         <SvgIcon fontSize='small'>
+  //           <Users03Icon />
+  //         </SvgIcon>
+  //       ),
+  //       path: '/member',
+  //     },
+  //     {
+  //       title: '料金・お支払い',
+  //       icon: (
+  //         <SvgIcon fontSize='small'>
+  //           <CreditCard01 />
+  //         </SvgIcon>
+  //       ),
+  //       path: '/payment',
+  //     },
+  //     {
+  //       title: 'App連携',
+  //       icon: (
+  //         <SvgIcon fontSize='small'>
+  //           <Share07 />
+  //         </SvgIcon>
+  //       ),
+  //       path: '/connect',
+  //     },
+  //   ],
+  // },
 ]

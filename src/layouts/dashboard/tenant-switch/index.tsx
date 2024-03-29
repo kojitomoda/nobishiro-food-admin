@@ -6,7 +6,7 @@ import { Box, IconButton, Stack, SvgIcon, Typography } from '@mui/material'
 import { TenantPopover } from './tenant-popover'
 
 const tenants: string[] = [
-  '枚方本店_和カフェ・ごはん  ことの葉',
+  // '枚方本店_和カフェ・ごはん  ことの葉',
   '（通常）淀屋橋北浜駅前店_和カフェ・ごはん  ことの葉',
 ]
 

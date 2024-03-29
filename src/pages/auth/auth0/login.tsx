@@ -14,7 +14,7 @@ const Page: NextPage = () => {
     const searchParams = new URLSearchParams(globalThis.location.search)
     const returnTo = searchParams.get('returnTo')
     await loginWithRedirect({
-      returnTo: '/log',
+      returnTo: '/payment',
     })
   }, [loginWithRedirect])
 

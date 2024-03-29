@@ -60,38 +60,41 @@ export const StoreContent: FC = (props) => {
                     <TableHead>
                       <TableRow>
                         <TableCell>店舗名</TableCell>
-                        <TableCell>プラン</TableCell>
-                        <TableCell>契約日</TableCell>
+                        {/*<TableCell>プラン</TableCell>*/}
+                        <TableCell>登録日</TableCell>
                       </TableRow>
                     </TableHead>
                     <TableBody>
                       <TableRow hover sx={{ cursor: 'pointer' }}>
                         <TableCell>（通常）淀屋橋北浜駅前店_和カフェ・ごはん ことの葉</TableCell>
-                        <TableCell align='left'>スタンダード</TableCell>
+                        {/*<TableCell align='left'>スタンダード</TableCell>*/}
                         <TableCell align='left'>2024/02/21</TableCell>
                       </TableRow>
                       <TableRow hover sx={{ cursor: 'pointer' }}>
                         <TableCell>
                           （ビュッフェ）淀屋橋北浜駅前店_和カフェ・ごはん ことの葉
                         </TableCell>
-                        <TableCell align='left'>スタンダード</TableCell>
+                        {/*<TableCell align='left'>スタンダード</TableCell>*/}
                         <TableCell align='left'>2023/01/19</TableCell>
                       </TableRow>
-                      <TableRow hover sx={{ cursor: 'pointer' }}>
-                        <TableCell>枚方本店_和カフェ・ごはん ことの葉</TableCell>
-                        <TableCell align='left'>スタンダード</TableCell>
-                        <TableCell align='left'>2023/05/02</TableCell>
-                      </TableRow>
+                      {/*<TableRow hover sx={{ cursor: 'pointer' }}>*/}
+                      {/*  <TableCell>枚方本店_和カフェ・ごはん ことの葉</TableCell>*/}
+                      {/*  /!*<TableCell align='left'>スタンダード</TableCell>*!/*/}
+                      {/*  <TableCell align='left'>2023/05/02</TableCell>*/}
+                      {/*</TableRow>*/}
                     </TableBody>
                   </Table>
+                  <div style={{ textDecoration: 'underline' }}>
+                    ※店舗を追加する場合、契約内容を先にご変更ください。
+                  </div>
                   <Button
                     color='warning'
                     variant='contained'
-                    style={{ width: '200px', fontSize: '18px' }}
+                    style={{ width: '300px', fontSize: '18px' }}
                     component={NextLink}
-                    href={`/store/register`}
+                    href={``}
                   >
-                    店舗を追加する
+                    契約内容を変更する
                   </Button>
                 </Stack>
               </CardContent>
