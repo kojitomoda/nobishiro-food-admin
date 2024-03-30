@@ -33,6 +33,7 @@ type TabValue =
   | 'payment'
   | 'contact'
   | 'contract-update'
+  | 'license'
 interface TabOption {
   label: string
   value: TabValue
@@ -40,7 +41,11 @@ interface TabOption {
 
 const tabOptions: TabOption[] = [
   {
-    label: '概要',
+    label: 'のびしろFoodライセンス規約',
+    value: 'license',
+  },
+  {
+    label: '契約内容',
     value: 'all',
   },
   // {
@@ -92,7 +97,73 @@ export const OrderListSearch: FC = (props) => {
         ))}
       </Tabs>
       <Divider />
-      {currentTab === 'all' ? (
+      {currentTab === 'license' ? (
+        <Container maxWidth='md'>
+          <Stack spacing={5} pt={5}>
+            <Card>
+              <CardContent>
+                <Stack spacing={5}>
+                  <Grid>
+                    <Typography variant='h5'>ログインベースのライセンス管理 (LBLM)</Typography>
+                    <div style={{ marginTop: '20px', lineHeight: 1.8 }}>
+                      のびしろFoodはログインベースのライセンス発行を管理できます。<br></br>
+                      ログインベースのライセンス発行とは、ユーザ数に応じて金額が変動し<br></br>
+                      ログインユーザを管理できる仕組みです。
+                      <br></br>
+                      <span style={{ textDecoration: 'underline' }}>
+                        ユーザに割り当てられるロール(権限)は、契約者が自由に設定できることができます。
+                      </span>
+                      <br></br>
+                      <span style={{ textDecoration: 'underline' }}>
+                        どのロールでも１ユーザーにカウントされます。
+                      </span>
+                    </div>
+                  </Grid>
+                  <Grid>
+                    <Typography variant='h5' sx={{ mb: 2 }}>
+                      ユーザー数について
+                    </Typography>
+                    <div style={{ marginTop: '20px', lineHeight: 1.8 }}>
+                      １店舗あたり9ユーザー付与されます。<br></br>
+                      ユーザー数を追加希望の場合、契約内容変更画面から購入することができます。
+                      <div></div>
+                      <br></br>
+                      例) ３店舗利用した場合
+                      <br></br>
+                      38ユーザー
+                      <div></div>
+                      <br></br>
+                      例) ３店舗利用 + ユーザー追加を１つ購入
+                      <br></br>
+                      48ユーザー
+                    </div>
+                  </Grid>
+                  <Grid>
+                    {/*<Typography variant='h6' sx={{ pb: 1 }}>*/}
+                    {/*  アカウントのステータス*/}
+                    {/*</Typography>*/}
+                    {/*<div>*/}
+                    {/*  今回のお支払いは、 <strong>３</strong>店舗分の利用料金となります。*/}
+                    {/*</div>*/}
+                    <a href=''>契約内容変更はこちら</a>
+                  </Grid>
+                  {/*<Stack>*/}
+                  {/*  <Grid>*/}
+                  {/*    <Typography variant='h6' sx={{ pb: 1 }}>*/}
+                  {/*      請求メールの送信先*/}
+                  {/*    </Typography>*/}
+                  {/*    <div>*/}
+                  {/*      test@nobishiro.biz<br></br>*/}
+                  {/*    </div>*/}
+                  {/*    <a href=''>請求連絡先を変更する</a>*/}
+                  {/*  </Grid>*/}
+                  {/*</Stack>*/}
+                </Stack>
+              </CardContent>
+            </Card>
+          </Stack>
+        </Container>
+      ) : currentTab === 'all' ? (
         <Container maxWidth='md'>
           <Stack spacing={5} pt={5}>
             <Card>
@@ -114,16 +185,17 @@ export const OrderListSearch: FC = (props) => {
                         <TableRow hover sx={{ cursor: 'pointer' }}>
                           <TableCell>店舗数</TableCell>
                           <TableCell>２店舗</TableCell>
+                          <TableCell>１店舗あたり10ユーザー付与されます。</TableCell>
                         </TableRow>
                         <TableRow hover sx={{ cursor: 'pointer' }}>
-                          <TableCell>スタッフ追加</TableCell>
+                          <TableCell>ユーザー追加</TableCell>
                           <TableCell>2</TableCell>
-                          <TableCell>１つ追加あたり10アカウント追加できます。</TableCell>
+                          <TableCell>１つあたり10ユーザー付与されます。</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
                     <div style={{ marginTop: '20px' }}>
-                      この契約では、<strong>38</strong>アカウントを追加できます。<br></br>
+                      この契約では、<strong>38</strong>ユーザー作成・管理できます。<br></br>
                       2024年4月1日に <strong>￥22,00</strong>（税込み) で更新されます。<br></br>
                       <strong>2024年4月1日 ~ 2024年4月30日</strong>までの利用料金です。
                     </div>

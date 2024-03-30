@@ -28,7 +28,7 @@ export const getSections = (t: TFunction): Section[] => [
   {
     items: [
       {
-        title: '料金・お支払い',
+        title: '契約を管理する',
         icon: (
           <SvgIcon fontSize='small'>
             <CreditCard01 />

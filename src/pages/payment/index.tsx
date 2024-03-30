@@ -23,7 +23,7 @@ const Page: NextPage = () => {
       <Box sx={{ p: 3, pt: 5 }}>
         <Stack alignItems='flex-start' direction='row' justifyContent='space-between' spacing={4}>
           <div>
-            <Typography variant='h4'>料金・お支払い</Typography>
+            <Typography variant='h4'>契約</Typography>
           </div>
           <div></div>
         </Stack>
