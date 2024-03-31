@@ -185,7 +185,7 @@ export const OrderListSearch: FC = (props) => {
                         <TableRow hover sx={{ cursor: 'pointer' }}>
                           <TableCell>店舗数</TableCell>
                           <TableCell>２店舗</TableCell>
-                          <TableCell>１店舗あたり10ユーザー付与されます。</TableCell>
+                          <TableCell>１店舗あたり9ユーザー付与されます。</TableCell>
                         </TableRow>
                         <TableRow hover sx={{ cursor: 'pointer' }}>
                           <TableCell>ユーザー追加</TableCell>
