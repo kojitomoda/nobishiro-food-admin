@@ -124,18 +124,18 @@ export const OrderListSearch: FC = (props) => {
                       ユーザー数について
                     </Typography>
                     <div style={{ marginTop: '20px', lineHeight: 1.8 }}>
-                      １店舗あたり9ユーザー付与されます。<br></br>
+                      １店舗あたり１ユーザー付与されます。<br></br>
                       ユーザー数を追加希望の場合、契約内容変更画面から購入することができます。
                       <div></div>
                       <br></br>
                       例) ３店舗利用した場合
                       <br></br>
-                      38ユーザー
+                      3ユーザー
                       <div></div>
                       <br></br>
                       例) ３店舗利用 + ユーザー追加を１つ購入
                       <br></br>
-                      48ユーザー
+                      13ユーザー
                     </div>
                   </Grid>
                   <Grid>
@@ -185,7 +185,7 @@ export const OrderListSearch: FC = (props) => {
                         <TableRow hover sx={{ cursor: 'pointer' }}>
                           <TableCell>店舗数</TableCell>
                           <TableCell>２店舗</TableCell>
-                          <TableCell>１店舗あたり9ユーザー付与されます。</TableCell>
+                          <TableCell></TableCell>
                         </TableRow>
                         <TableRow hover sx={{ cursor: 'pointer' }}>
                           <TableCell>ユーザー追加</TableCell>
@@ -195,7 +195,7 @@ export const OrderListSearch: FC = (props) => {
                       </TableBody>
                     </Table>
                     <div style={{ marginTop: '20px' }}>
-                      この契約では、<strong>38</strong>ユーザー作成・管理できます。<br></br>
+                      この契約では、<strong>12</strong>ユーザー作成・管理できます。<br></br>
                       2024年4月1日に <strong>￥22,00</strong>（税込み) で更新されます。<br></br>
                       <strong>2024年4月1日 ~ 2024年4月30日</strong>までの利用料金です。
                     </div>
