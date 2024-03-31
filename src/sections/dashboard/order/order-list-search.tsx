@@ -71,7 +71,7 @@ const tabOptions: TabOption[] = [
 ]
 
 export const OrderListSearch: FC = (props) => {
-  const [currentTab, setCurrentTab] = useState<TabValue>('all')
+  const [currentTab, setCurrentTab] = useState<TabValue>('license')
   const handleTabsChange = useCallback((event: ChangeEvent<{}>, tab: TabValue): void => {
     setCurrentTab(tab)
   }, [])

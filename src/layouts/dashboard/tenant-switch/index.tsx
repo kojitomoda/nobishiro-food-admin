@@ -7,7 +7,7 @@ import { TenantPopover } from './tenant-popover'
 
 const tenants: string[] = [
   // '枚方本店_和カフェ・ごはん  ことの葉',
-  '（通常）淀屋橋北浜駅前店_和カフェ・ごはん  ことの葉',
+  'ホームに戻る',
 ]
 
 export const TenantSwitch: FC = (props) => {
@@ -30,15 +30,18 @@ export const TenantSwitch: FC = (props) => {
     <>
       <Stack alignItems='center' direction='row' spacing={2} {...props}>
         <Box sx={{ flexGrow: 1 }}>
-          <Typography color='inherit' style={{ fontSize: '12px', fontWeight: 'bold' }}>
-            （ビュッフェ）淀屋橋北浜駅前店_和カフェ・ごはん ことの葉
+          <Typography
+            color='inherit'
+            style={{ fontSize: '20px', fontWeight: 'bold', textAlign: 'center' }}
+          >
+            合同会社COREHITS
           </Typography>
         </Box>
-        <IconButton onClick={handlePopoverOpen} ref={anchorRef}>
-          <SvgIcon sx={{ fontSize: 16 }}>
-            <ChevronDownIcon />
-          </SvgIcon>
-        </IconButton>
+        {/*<IconButton onClick={handlePopoverOpen} ref={anchorRef}>*/}
+        {/*  <SvgIcon sx={{ fontSize: 16 }}>*/}
+        {/*    <ChevronDownIcon />*/}
+        {/*  </SvgIcon>*/}
+        {/*</IconButton>*/}
       </Stack>
       <TenantPopover
         anchorEl={anchorRef.current}

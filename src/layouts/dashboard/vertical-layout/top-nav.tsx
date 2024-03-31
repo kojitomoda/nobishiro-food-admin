@@ -52,7 +52,7 @@ export const TopNav: FC<TopNavProps> = (props) => {
         style={{ backgroundColor: '#4580e60a' }}
       >
         <Stack alignItems='center' direction='row' spacing={2}>
-          <div style={{ fontSize: '20px', fontWeight: 'bold' }}>合同会社COREHITS</div>
+          <div style={{ fontSize: '20px', fontWeight: 'bold' }}></div>
         </Stack>
         <Stack alignItems='center' direction='row' spacing={2}>
           <Box
