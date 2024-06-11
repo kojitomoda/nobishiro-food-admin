@@ -48,10 +48,10 @@ const tabOptions: TabOption[] = [
     label: '連携方法',
     value: 'pending',
   },
-  {
-    label: '設定方法',
-    value: 'setting',
-  },
+  // {
+  //   label: '設定方法',
+  //   value: 'setting',
+  // },
 ]
 
 export const ConnectContent: FC = (props) => {
@@ -112,17 +112,29 @@ export const ConnectContent: FC = (props) => {
                     </TableHead>
                     <TableBody>
                       <TableRow hover sx={{ cursor: 'pointer' }}>
+                        <TableCell>店舗</TableCell>
+                        <TableCell align='left'>店舗情報をのびしろFOODに反映します。</TableCell>
+                      </TableRow>
+                    </TableBody>
+                    <TableBody>
+                      <TableRow hover sx={{ cursor: 'pointer' }}>
+                        <TableCell>商品</TableCell>
+                        <TableCell align='left'>商品情報をのびしろFOODに反映します。</TableCell>
+                      </TableRow>
+                    </TableBody>
+                    <TableBody>
+                      <TableRow hover sx={{ cursor: 'pointer' }}>
                         <TableCell>商品原価</TableCell>
                         <TableCell align='left'>
-                          商品原価をスマレジの「原価」項目に反映することができます。
+                          のびしろFOODで算出された原価をスマレジに反映します。
                         </TableCell>
                       </TableRow>
                     </TableBody>
                   </Table>
-                  <Grid>
-                    <Typography variant='h5' sx={{ pb: 1 }}></Typography>
-                    <a href=''>連携はこちら{'>'}</a>
-                  </Grid>
+                  {/*<Grid>*/}
+                  {/*  <Typography variant='h5' sx={{ pb: 1 }}></Typography>*/}
+                  {/*  <a href=''>再連携はこちら{'>'}</a>*/}
+                  {/*</Grid>*/}
                 </Stack>
               </CardContent>
             </Card>
@@ -153,7 +165,7 @@ export const ConnectContent: FC = (props) => {
                   </Grid>
                   <Grid>
                     <a href='' style={{ fontSize: '20px' }}>
-                      連携はこちら{'>'}
+                      再連携はこちら{'>'}
                     </a>
                   </Grid>
                 </Stack>

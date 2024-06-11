@@ -59,48 +59,20 @@ export const StaffContent: FC = (props) => {
                     <TableHead>
                       <TableRow>
                         <TableCell>氏名</TableCell>
+                        <TableCell>メールアドレス</TableCell>
+                        <TableCell>権限</TableCell>
                         <TableCell>登録日</TableCell>
-                        <TableCell></TableCell>
                       </TableRow>
                     </TableHead>
                     <TableBody>
                       <TableRow hover sx={{ cursor: 'pointer' }}>
-                        <TableCell>大山 悠輔</TableCell>
+                        <TableCell>新井一成</TableCell>
+                        <TableCell>example@account.com</TableCell>
+                        <TableCell>管理者</TableCell>
                         <TableCell align='left'>2024/02/21</TableCell>
-                        <TableCell>
-                          <Button variant='outlined' color='error'>
-                            削除
-                          </Button>
-                        </TableCell>
-                      </TableRow>
-                      <TableRow hover sx={{ cursor: 'pointer' }}>
-                        <TableCell>佐藤 輝明</TableCell>
-                        <TableCell align='left'>2023/01/19</TableCell>
-                        <TableCell>
-                          <Button variant='outlined' color='error'>
-                            削除
-                          </Button>
-                        </TableCell>
-                      </TableRow>
-                      <TableRow hover sx={{ cursor: 'pointer' }}>
-                        <TableCell>近本 光司</TableCell>
-                        <TableCell align='left'>2023/05/02</TableCell>
-                        <TableCell>
-                          <Button variant='outlined' color='error'>
-                            削除
-                          </Button>
-                        </TableCell>
                       </TableRow>
                     </TableBody>
                   </Table>
-                  <Grid>
-                    <Typography variant='h6' sx={{ pb: 1 }}>
-                      スタッフ追加人数
-                    </Typography>
-                    <div>
-                      残り<strong>５人です</strong>。 <br></br>
-                    </div>
-                  </Grid>
                   <Button
                     color='warning'
                     variant='contained'

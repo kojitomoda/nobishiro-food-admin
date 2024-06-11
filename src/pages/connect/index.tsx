@@ -23,7 +23,7 @@ const Page: NextPage = () => {
       <Box sx={{ p: 3, pt: 5 }}>
         <Stack alignItems='flex-start' direction='row' justifyContent='space-between' spacing={4}>
           <div>
-            <Typography variant='h4'>App連携</Typography>
+            <Typography variant='h4'>スマレジ連携</Typography>
           </div>
           <div></div>
         </Stack>

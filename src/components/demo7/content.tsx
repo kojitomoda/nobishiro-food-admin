@@ -85,17 +85,17 @@ export const StoreContent: FC = (props) => {
                     </TableBody>
                   </Table>
                   <div style={{ textDecoration: 'underline' }}>
-                    ※店舗を追加する場合、契約内容を先にご変更ください。
+                    ※店舗情報はスマレジと同期しています。
                   </div>
-                  <Button
-                    color='warning'
-                    variant='contained'
-                    style={{ width: '300px', fontSize: '18px' }}
-                    component={NextLink}
-                    href={``}
-                  >
-                    契約内容を変更する
-                  </Button>
+                  {/*<Button*/}
+                  {/*  color='warning'*/}
+                  {/*  variant='contained'*/}
+                  {/*  style={{ width: '300px', fontSize: '18px' }}*/}
+                  {/*  component={NextLink}*/}
+                  {/*  href={``}*/}
+                  {/*>*/}
+                  {/*  契約内容を変更する*/}
+                  {/*</Button>*/}
                 </Stack>
               </CardContent>
             </Card>

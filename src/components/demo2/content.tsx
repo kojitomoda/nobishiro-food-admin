@@ -44,10 +44,10 @@ const tabOptions: TabOption[] = [
     label: '概要',
     value: 'all',
   },
-  {
-    label: 'App連携とは',
-    value: 'pending',
-  },
+  // {
+  //   label: 'App連携とは',
+  //   value: 'pending',
+  // },
 ]
 
 export const ConnectContent: FC = (props) => {
@@ -106,7 +106,7 @@ export const ConnectContent: FC = (props) => {
                     <TableHead>
                       <TableRow>
                         <TableCell>名前</TableCell>
-                        <TableCell>s</TableCell>
+                        <TableCell>状態</TableCell>
                       </TableRow>
                     </TableHead>
                     <TableBody>
@@ -133,7 +133,7 @@ export const ConnectContent: FC = (props) => {
                           </Box>
                         </TableCell>
                         <TableCell align='left'>
-                          <SeverityPill color={'success'}>未連携</SeverityPill>
+                          <SeverityPill color={'success'}>連携済</SeverityPill>
                         </TableCell>
                       </TableRow>
                     </TableBody>

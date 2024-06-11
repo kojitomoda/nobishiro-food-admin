@@ -27,23 +27,32 @@ export interface Section {
 export const getSections = (t: TFunction): Section[] => [
   {
     items: [
+      // {
+      //   title: '契約を管理する',
+      //   icon: (
+      //     <SvgIcon fontSize='small'>
+      //       <CreditCard01 />
+      //     </SvgIcon>
+      //   ),
+      //   path: '/payment',
+      // },
       {
-        title: '契約を管理する',
-        icon: (
-          <SvgIcon fontSize='small'>
-            <CreditCard01 />
-          </SvgIcon>
-        ),
-        path: '/payment',
-      },
-      {
-        title: 'App連携',
+        title: 'スマレジ連携',
         icon: (
           <SvgIcon fontSize='small'>
             <Share07 />
           </SvgIcon>
         ),
         path: '/connect',
+      },
+      {
+        title: 'スタッフを管理する',
+        icon: (
+          <SvgIcon fontSize='small'>
+            <Users03Icon />
+          </SvgIcon>
+        ),
+        path: '/staff',
       },
       {
         title: '店舗を管理する',
@@ -54,23 +63,14 @@ export const getSections = (t: TFunction): Section[] => [
         ),
         path: '/store',
       },
-      // {
-      //   title: 'ホームに戻る',
-      //   icon: (
-      //     <SvgIcon fontSize='small'>
-      //       <AlignLeft02 />
-      //     </SvgIcon>
-      //   ),
-      // },
-      // {
-      //   title: 'スタッフを管理する',
-      //   icon: (
-      //     <SvgIcon fontSize='small'>
-      //       <Users03Icon />
-      //     </SvgIcon>
-      //   ),
-      //   path: '/staff',
-      // },
+      {
+        title: 'のびしろFOODに遷移する',
+        icon: (
+          <SvgIcon fontSize='small'>
+            <AlignLeft02 />
+          </SvgIcon>
+        ),
+      },
       // {
       //   title: 'Appを設定する',
       //   icon: (
